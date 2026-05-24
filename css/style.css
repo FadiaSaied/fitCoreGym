@@ -1,0 +1,523 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+#hero {
+  background-color: #fbfcfc;
+  padding-top: 70px;
+  height: 100dvh;
+  margin: auto;
+}
+
+#hero .item {
+  width: 60%;
+  float: left;
+  padding-right: 70px;
+}
+
+#hero .item h1 {
+  color: #101828;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+#hero .item p {
+  color: #4a5565;
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+#hero .item button {
+  padding: 20px 30px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  border-radius: 10px;
+}
+
+#hero .item .btn-start {
+  background-color: #000000;
+  color: white;
+  border: none;
+  margin-right: 10px;
+}
+
+#hero .item .btn-learn {
+  border: 1px solid #d1d5dc;
+  background-color: white;
+  color: #4a5565;
+}
+
+#hero img {
+  width: 40%;
+  float: left;
+  border-radius: 20px;
+}
+
+#whyChoose {
+  padding-top: 70px;
+}
+
+#whyChoose .text {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+#whyChoose .text h2 {
+  color: #101828;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#whyChoose .text p {
+  color: #4a5565;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+#whyChoose .content .card {
+  padding: 0 15px;
+  width: 33.333%;
+  float: left;
+}
+
+#whyChoose .content .card .inner {
+  text-align: center;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+#whyChoose .content .card .one {
+  background-color: #dbeafe;
+  border: 1px solid #bedbff;
+}
+
+#whyChoose .content .card .two {
+  background-color: #d0fae5;
+  border: 1px solid #a4f4cf;
+}
+
+#whyChoose .content .card .three {
+  background-color: #f3e8ff;
+  border: 1px solid #e9d4ff;
+}
+
+#whyChoose .content .card .inner div {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#whyChoose .content .card .inner div div {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+}
+
+#whyChoose .content .card .one .bg-one {
+  background-color: #155dfc;
+}
+
+#whyChoose .content .card .two .bg-two {
+  background-color: #009966;
+}
+#whyChoose .content .card .two .bg-two span {
+  border-radius: 50%;
+}
+
+#whyChoose .content .card .three .bg-three {
+  background-color: #9810fa;
+}
+
+#whyChoose .content .card h3 {
+  color: #101828;
+  margin: 20px 0;
+}
+
+#whyChoose .content .card p {
+  color: #4a5565;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.moreThan {
+  margin: 70px 0;
+}
+
+#whyChoose .moreThan img {
+  width: 50%;
+  border-radius: 10px;
+  float: left;
+}
+
+#whyChoose .moreThan .content {
+  width: 50%;
+  float: left;
+  padding-left: 50px;
+}
+
+#whyChoose .moreThan .content h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #101828;
+}
+
+#whyChoose .moreThan .content .info {
+  margin: 30px 0;
+  border-left: 4px solid #000000;
+  padding-left: 20px;
+}
+
+#whyChoose .moreThan .content .info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #101828;
+}
+
+#whyChoose .moreThan .content .info p {
+  color: #4a5565;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+#ourMembers {
+  background-color: #f9fafb;
+  padding: 70px 0 20px;
+}
+
+#ourMembers .text {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+#ourMembers .text h2 {
+  color: #101828;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#ourMembers .text p {
+  color: #4a5565;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+#ourMembers .content {
+  width: 33.333%;
+  float: left;
+  padding: 0 15px;
+  margin-top: 40px;
+}
+
+#ourMembers .content .inner {
+  background-color: #9810fa;
+  border-radius: 15px;
+  padding: 40px 20px;
+}
+
+#ourMembers .content .one {
+  background-color: #eff6ff;
+  border: 1px solid #bedbff;
+}
+
+#ourMembers .content .two {
+  background-color: #ecfdf5;
+  border: 1px solid #a4f4cf;
+}
+
+#ourMembers .content .three {
+  background-color: #faf5ff;
+  border: 1px solid #e9d4ff;
+}
+
+#ourMembers .content .inner .info .title {
+  width: 70%;
+  float: left;
+  margin-left: 15px;
+}
+
+#ourMembers .content .inner .info .title h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #101828;
+  margin-bottom: 6px;
+}
+
+#ourMembers .content .inner .info .title p {
+  color: #4a5565;
+}
+
+#ourMembers .content .inner blockquote {
+  color: #4a5565;
+  display: block;
+  line-height: 1.5;
+  margin-top: 25px;
+}
+
+#ourMembers .content .inner .info img {
+  width: 20%;
+  float: left;
+  border-radius: 50%;
+}
+
+.numbers {
+  background-color: #f1f5f9;
+  margin: 70px auto;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid #e2e8f0;
+}
+
+.numbers .item {
+  width: 25%;
+  float: left;
+  padding: 40px 60px;
+}
+
+.numbers .item span {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.numbers .item p {
+  color: #4a5565;
+  margin-top: 5px;
+}
+
+#readyToStart {
+  padding-top: 70px;
+}
+
+#readyToStart .text {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+#readyToStart .text h2 {
+  color: #101828;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#readyToStart .text p {
+  color: #4a5565;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 25px 0;
+  line-height: 1.5;
+}
+
+#readyToStart .form {
+  background-color: #f9fafb;
+  padding: 70px;
+  margin: 40px auto;
+  border-radius: 15px;
+  width: 80%;
+}
+
+#readyToStart .form .firstName {
+  float: left;
+  width: 50%;
+  padding-right: 20px;
+}
+
+#readyToStart .form .lastName {
+  float: left;
+  width: 50%;
+}
+#readyToStart .form label {
+  color: #4f4153;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#readyToStart .form input {
+  border-radius: 10px;
+  border: 1px solid #d1d5dc;
+  background-color: #f9fafb;
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#readyToStart .form input::placeholder {
+  color: #7c7d7d;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#readyToStart .form select {
+  border-radius: 10px;
+  border: 1px solid #d1d5dc;
+  background-color: #f9fafb;
+  width: 100%;
+  padding: 20px;
+  color: #4f4153;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+#readyToStart .form select option {
+  color: #4f4153;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#readyToStart .form textarea {
+  border-radius: 10px;
+  border: 1px solid #d1d5dc;
+  background-color: #f9fafb;
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  resize: none;
+}
+
+#readyToStart .form textarea::placeholder {
+  color: #7c7d7d;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#readyToStart .form button {
+  background-color: #000000;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#readyToStart .form p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5a6c82;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#footer {
+  background-color: #101828;
+  padding: 70px 0;
+  margin-top: 70px;
+}
+
+#footer h3,
+#footer h4 {
+  color: white;
+}
+
+#footer p,
+#footer a {
+  color: #99a1af;
+}
+
+#footer .item {
+  float: left;
+}
+
+#footer .one {
+  width: 50%;
+}
+
+#footer .two {
+  width: 25%;
+  padding-left: 20px;
+}
+
+#footer .three {
+  width: 25%;
+}
+
+#footer .one h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#footer .one p {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#footer .one a {
+  text-decoration: none;
+  margin-right: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+#footer .two h3,
+#footer .three h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#footer .two ul li {
+  list-style: none;
+  margin-top: 15px;
+}
+
+#footer .two ul li a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+#footer .three h4 {
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+#footer .foot {
+  margin-top: 40px;
+  border-top: 1px solid #99a1af;
+  padding-top: 30px;
+}
+
+#footer .foot p {
+  float: left;
+  width: 70%;
+  color: #99a1af;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#footer .foot .links {
+  float: right;
+  width: 30%;
+}
+#footer .foot .links a {
+  color: #99a1af;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  margin-left: 10px;
+}
