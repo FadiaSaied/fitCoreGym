@@ -13,21 +13,20 @@ body {
   margin: auto;
 }
 
-.clear-fix {
-  clear: both;
+#hero .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 #hero {
   background-color: #fbfcfc;
   padding-top: 70px;
   height: 100dvh;
-  margin: auto;
 }
 
 #hero .item {
-  width: 60%;
-  float: left;
-  padding-right: 70px;
+  width: calc((100% - 40px) * 0.6);
 }
 
 #hero .item h1 {
@@ -47,7 +46,6 @@ body {
 #hero .item button {
   padding: 20px 30px;
   font-size: 18px;
-  font-family: "Inter", sans-serif;
   border-radius: 10px;
 }
 
@@ -65,13 +63,22 @@ body {
 }
 
 #hero img {
-  width: 40%;
-  float: left;
+  width: calc((100% - 40px) * 0.4);
   border-radius: 20px;
 }
 
 #whyChoose {
   padding-top: 70px;
+}
+
+#whyChoose .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 50px 0 40px;
+}
+#whyChoose .card {
+  width: calc((100% - 40px) / 3);
 }
 
 #whyChoose .text {
@@ -90,19 +97,14 @@ body {
   color: #4a5565;
   font-size: 20px;
   font-weight: 400;
-  margin: 30px 0;
-}
-
-#whyChoose .content .card {
-  padding: 0 15px;
-  width: 33.333%;
-  float: left;
+  margin-top: 30px;
 }
 
 #whyChoose .content .card .inner {
   text-align: center;
   border-radius: 15px;
   padding: 30px;
+  min-height: 250px;
 }
 
 #whyChoose .content .card .one {
@@ -120,18 +122,25 @@ body {
   border: 1px solid #e9d4ff;
 }
 
-#whyChoose .content .card .inner div {
+#whyChoose .content .card .bg-one,
+#whyChoose .content .card .bg-two,
+#whyChoose .content .card .bg-three {
   width: 60px;
   height: 60px;
-  margin: auto;
-  padding: 15px;
   border-radius: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#whyChoose .content .card .inner div div {
+#whyChoose .content .card .bg-one div,
+#whyChoose .content .card .bg-two div,
+#whyChoose .content .card .bg-three div {
   background-color: white;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
 }
 
 #whyChoose .content .card .one .bg-one {
@@ -141,7 +150,7 @@ body {
 #whyChoose .content .card .two .bg-two {
   background-color: #009966;
 }
-#whyChoose .content .card .two .bg-two span {
+#whyChoose .content .card .two .bg-two div {
   border-radius: 50%;
 }
 
@@ -163,16 +172,18 @@ body {
 .moreThan {
   margin: 70px 0;
 }
-
+#whyChoose .data {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 #whyChoose .moreThan img {
-  width: 50%;
+  width: calc((100% - 10px) / 2);
   border-radius: 10px;
-  float: left;
 }
 
 #whyChoose .moreThan .content {
-  width: 50%;
-  float: left;
+  width: calc((100% - 10px) / 2);
   padding-left: 50px;
 }
 
@@ -224,17 +235,21 @@ body {
   margin: 20px 0;
 }
 
+#ourMembers .ourMembersContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #ourMembers .content {
+  padding: 0 20px;
   width: 33.333%;
-  float: left;
-  padding: 0 15px;
-  margin-top: 40px;
 }
 
 #ourMembers .content .inner {
   background-color: #9810fa;
   border-radius: 15px;
-  padding: 40px 20px;
+  padding: 30px 20px;
+  margin-top: 40px;
 }
 
 #ourMembers .content .one {
@@ -252,10 +267,11 @@ body {
   border: 1px solid #e9d4ff;
 }
 
-#ourMembers .content .inner .info .title {
-  width: 70%;
-  float: left;
-  margin-left: 15px;
+#ourMembers .content .info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
 }
 
 #ourMembers .content .inner .info .title h3 {
@@ -277,8 +293,7 @@ body {
 }
 
 #ourMembers .content .inner .info img {
-  width: 20%;
-  float: left;
+  width: 60px;
   border-radius: 50%;
 }
 
@@ -288,11 +303,12 @@ body {
   text-align: center;
   border-radius: 15px;
   border: 1px solid #e2e8f0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .numbers .item {
   width: 25%;
-  float: left;
   padding: 40px 60px;
 }
 
@@ -337,24 +353,29 @@ body {
   border-radius: 15px;
   width: 80%;
 }
+#readyToStart .form .formGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 
-#readyToStart .form .firstName {
-  float: left;
-  width: 50%;
-  padding-right: 20px;
+  justify-content: space-between;
 }
 
+#readyToStart .form .firstName,
 #readyToStart .form .lastName {
-  float: left;
-  width: 50%;
+  width: calc((100% - 15px) / 2);
 }
+
 #readyToStart .form label {
   color: #4f4153;
   font-size: 18px;
   font-weight: 500;
 }
 
-#readyToStart .form input {
+#readyToStart .form input ,
+#readyToStart .form select,
+#readyToStart .form textarea 
+{
   border-radius: 10px;
   border: 1px solid #d1d5dc;
   background-color: #f9fafb;
@@ -370,15 +391,12 @@ body {
 }
 
 #readyToStart .form select {
-  border-radius: 10px;
-  border: 1px solid #d1d5dc;
-  background-color: #f9fafb;
-  width: 100%;
-  padding: 20px;
+  
+  
   color: #4f4153;
   font-size: 18px;
   font-weight: 400;
-  margin: 20px 0;
+ 
 }
 
 #readyToStart .form select option {
@@ -388,12 +406,7 @@ body {
 }
 
 #readyToStart .form textarea {
-  border-radius: 10px;
-  border: 1px solid #d1d5dc;
-  background-color: #f9fafb;
-  width: 100%;
-  padding: 20px;
-  margin: 20px 0;
+ 
   resize: none;
 }
 
@@ -406,7 +419,6 @@ body {
 #readyToStart .form button {
   background-color: #000000;
   color: white;
-  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 500;
   padding: 20px;
@@ -428,7 +440,11 @@ body {
   padding: 70px 0;
   margin-top: 70px;
 }
-
+#footer .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 #footer h3,
 #footer h4 {
   color: white;
@@ -439,21 +455,16 @@ body {
   color: #99a1af;
 }
 
-#footer .item {
-  float: left;
+#footer .content .one {
+  width: calc((100% - 30px) * 0.5);
 }
 
-#footer .one {
-  width: 50%;
+#footer .content .two {
+  width: calc((100% - 30px) * 0.2);
 }
 
-#footer .two {
-  width: 25%;
-  padding-left: 20px;
-}
-
-#footer .three {
-  width: 25%;
+#footer .content .three {
+  width: calc((100% - 30px) * 0.3);
 }
 
 #footer .one h3 {
@@ -499,10 +510,12 @@ body {
   margin-top: 40px;
   border-top: 1px solid #99a1af;
   padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #footer .foot p {
-  float: left;
   width: 70%;
   color: #99a1af;
   font-size: 14px;
@@ -510,9 +523,9 @@ body {
 }
 
 #footer .foot .links {
-  float: right;
   width: 30%;
 }
+
 #footer .foot .links a {
   color: #99a1af;
   font-size: 14px;
