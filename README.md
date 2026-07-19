@@ -18,7 +18,7 @@ My second assignment during the Front-End Development track at Route Academy.
 ## Live Demo
 https://fadiasaied.github.io/fitCoreGym/
 
-## preview.png
+## preview
 <img width="1282" height="641" alt="Screenshot From 2026-07-09 19-50-37" src="https://github.com/user-attachments/assets/8093d23b-ed48-43bf-9d24-07034c185874" />
 <img width="1282" height="641" alt="Screenshot From 2026-07-09 19-50-45" src="https://github.com/user-attachments/assets/80731b14-7463-431e-afd8-9bb79aa4c4c4" />
 <img width="1282" height="641" alt="Screenshot From 2026-07-09 19-50-53" src="https://github.com/user-attachments/assets/c97783d4-5fe3-4b47-bd01-b5cf9f37173d" />
